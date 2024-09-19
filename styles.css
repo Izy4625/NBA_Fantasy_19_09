@@ -88,3 +88,9 @@ th{
 td{
     color: black;
 }
+#apiMessage{
+    width: 100%;
+    max-width: 900px;
+    height:10px;
+    font-size: 8px;
+}
