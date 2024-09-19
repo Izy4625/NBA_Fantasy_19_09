@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+        <header>NBA FANTASY 2014-2024</header>
+    </div>
+    <div id="myTead-div">
+        <div class="teamMember" id="PG">Point Guard</div>
+        <div class="teamMember" Id="SG">Shooting Guard</div>
+        <div class="teamMember" id="SF">Small Forward</div>
+        <div class="teamMember" id="PF">Power Forward</div>
+        <div class="teamMember" id="C">Center</div>
+    </div>
+    <div>
+        <form action="" id="searchform">
+            <select name="" id="selectPosition" class="Search">
+                <option value="PG">PG</option>
+                <option value="SG"> SG</option>
+                <option value="SF">SF</option>
+                <option value="PF">PF</option>
+                <option value="C">C</option>
+            </select>
+            <label for="Point">Points</label>
+            <input type="range" min="0" max="20000" class="Slider Search" id="inputTotalPoints">
+            <label for="3Pointers">3Pointers</label>
+            <input type="range" min="0" max="100" class="Slider Search" id="input3Pointers">
+            <label for="2Pointers">2Pointers</label>
+            <input type="range" min="0" max="100" class="Slider Search" id="input2Pointers">>
+            <input type="submit" value="Search Player" id="searchPlayers">
+        </form>
+        <div id="table-div">
+            <table>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>Points</th>
+                    <th>2P%</th>
+                    <th>3P%</th>
+                    <th>Action</th>
+
+
+                </tr>
+                <tbody id="table-body"></tbody>
+            </table>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
