@@ -22,7 +22,7 @@
     <div id="apiMessage">
         
     </div>
-    <div>
+    <div id="searchform-div">
         <form action="" id="searchform">
             <select name="" id="selectPosition" class="Search">
                 <option value="PG">PG</option>
@@ -31,14 +31,32 @@
                 <option value="PF">PF</option>
                 <option value="C">C</option>
             </select>
-            <label for="Point">Points</label>
+        </form>
+            <form class="rangeForm">
+                <input type="number" name="amountInput" id="inputTotalPoints" min="0" max="20000" value="0" class="rangeBox" oninput="this.form.amountRange.value=this.value" />
+                <input type="range" name="amountRange" min="0" max="20000" class="Slider Search" id="inputTotalPoints" value="0" oninput="this.form.amountInput.value=this.value" />
+              </form>
+              <form class="rangeForm">
+                <input type="number" id="input3Pointers" name="amountInput" min="0" max="100" class="rangeBox" value="0" oninput="this.form.amountRange.value=this.value" />
+                <input type="range" name="amountRange"class="Slider Search" id="input3Pointers"  min="0" max="100" value="0" oninput="this.form.amountInput.value=this.value" />
+           
+              </form>
+              <form class="rangeForm">
+                <input type="number" id="input2Pointers"name="amountInput" min="0" max="100" class="rangeBox" value="0" oninput="this.form.amountRange.value=this.value" />
+                <input type="range" name="amountRange" class="Slider Search"   min="0" max="100" value="0" oninput="this.form.amountInput.value=this.value" />
+                
+              </form>
+              <button type="submit" value="Search Player" id="searchPlayers"> Search Player</button>
+           
+             <!-- <label for="Points">Points</label>
+           
             <input type="range" min="0" max="20000" class="Slider Search" id="inputTotalPoints">
             <label for="3Pointers">3Pointers</label>
             <input type="range" min="0" max="100" class="Slider Search" id="input3Pointers">
             <label for="2Pointers">2Pointers</label>
-            <input type="range" min="0" max="100" class="Slider Search" id="input2Pointers">>
-            <input type="submit" value="Search Player" id="searchPlayers">
-        </form>
+            <input type="range" min="0" max="100" class="Slider Search" id="input2Pointers"> -->
+           
+        <!-- </form> -->
         <div id="table-div">
             <table>
                 <tr>
